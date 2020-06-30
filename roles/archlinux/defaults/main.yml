@@ -1,0 +1,13 @@
+---
+ssh_port: 22
+swapsize: 8GB
+
+#TODO: lowercase
+MOUNTDIR: /mnt
+DRIVE: /dev/nvme0n1
+INSDRIVE: /dev/nvme0n1
+INSPARTITION: /dev/nvme0n1p2
+BTRFSNAME: system
+CRYPTNAME: cryptsystem
+
+btrfs_opts: defaults,noatime,compress=lzo,autodefrag,ssd,x-mount.mkdir

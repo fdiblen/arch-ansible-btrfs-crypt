@@ -1,0 +1,25 @@
+---
+
+- name: Install the base packages
+  command: pacstrap /mnt base base-devel btrfs-progs linux-firmware linux-headers
+  
+
+- name: Install the base packages
+  command: genfstab -L -p /mnt >> /mnt/etc/fstab
+
+
+
+  # sudo intel-ucode acpid bluez  ntp 
+  # dbus avahi cronie vim openssh net-tools 
+  # networkmanager dialog terminus-font zsh 
+  # fish bash-completion htop fwupd 
+  # nvidia nvidia-lts nvidia-prime nvidia-utils
+
+
+
+# - name: Install packages foo and bar
+#   pacman:
+#     name:
+#       - foo
+#       - bar
+#     state: present
